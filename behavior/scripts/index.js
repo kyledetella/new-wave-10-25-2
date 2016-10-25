@@ -8,11 +8,7 @@ exports.handle = (client) => {
     },
 
     prompt() {
-      client.addResponse('app:response:name:welcome')
-      client.addResponse('app:response:name:provide/documentation', {
-        documentation_link: 'http://docs.init.ai',
-      })
-      client.addResponse('app:response:name:provide/instructions')
+      client.addTextResponse('Cubs')
 
       client.updateConversationState({
         helloSent: true
